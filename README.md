@@ -6,6 +6,10 @@ Showroom of cool stuff
 
 [Link to Item](https://mvera8.github.io/showroom/card-hover-effect/)
 
+## Card Hover Effect 2
+
+[Link to Item](https://mvera8.github.io/showroom/card-hover-effect-2/)
+
 ## Theme Toggle With Transition
 
 [Link to Item](https://mvera8.github.io/showroom/theme-toggle-with-transition/)
@@ -20,4 +24,4 @@ Showroom of cool stuff
 
 ## Cool Background
 
-[Link to Item](https://mvera8.github.io/showroom/cool-background/).
+[Link to Item](https://mvera8.github.io/showroom/cool-background/)

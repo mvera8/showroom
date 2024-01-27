@@ -31,6 +31,6 @@ cp -r ./template ./"$new_folder_name"
 readme_file="README.md"
 
 # Append a new element to the README.md file
-echo "\n## TITLE\n[Link to Item](https://mvera8.github.io/showroom/$new_folder_name/)." >> "$readme_file"
+echo "\n## TITLE\n[Link to Item](https://mvera8.github.io/showroom/$new_folder_name/)" >> "$readme_file"
 
 echo "Script executed successfully!"
