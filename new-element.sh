@@ -9,16 +9,12 @@ fi
 # Save the branch name from the command line argument
 new_element=$1
 
-# Step 1: Checkout the main branch
+# Step 1: Prepare git barnch
 git checkout main
-
-# Step 2: Pull changes from the origin main branch
 git pull origin main
-
-# Step 3: Create a new branch from the provided variable
 git checkout -b "$new_element"
 
-# Step 4: Clone the template folder to a folder named as the variable
+# Step 2: Clone the template folder to a folder named as the variable
 template_folder="template"
 new_folder_name="$new_element"
 
@@ -30,5 +26,11 @@ fi
 
 # Clone the template folder to the new folder
 cp -r ./template ./"$new_folder_name"
+
+# Step 3: Add to README.md file the new element as ## TITLE [Link to Item](https://mvera8.github.io/showroom/"$new_folder_name"/).
+readme_file="README.md"
+
+# Append a new element to the README.md file
+echo -e "\n## TITLE\n[Link to Item](https://mvera8.github.io/showroom/$new_folder_name/)." >> "$readme_file"
 
 echo "Script executed successfully!"
