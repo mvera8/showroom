@@ -17,3 +17,7 @@ Showroom of cool stuff
 ## Buttom Showroom
 
 [Link to Item](https://mvera8.github.io/showroom/button-showroom/)
+
+## Cool Background
+
+[Link to Item](https://mvera8.github.io/showroom/cool-background/).
