@@ -29,6 +29,6 @@ if [ -d "$new_folder_name" ]; then
 fi
 
 # Clone the template folder to the new folder
-git clone "$template_folder" "$new_folder_name"
+cp -r ./template ./"$new_folder_name"
 
 echo "Script executed successfully!"

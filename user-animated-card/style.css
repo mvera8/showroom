@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #212121;
+	box-sizing: border-box;
+	font-family: Montserrat, sans-serif;
+}
+
+.container {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card {
+	width: 18rem;
+	max-width: 18rem;
+	height: 20rem;
+	background: White;
+	position: relative;
+	cursor: pointer;
+	border-radius: 1rem;
+	box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.card-position {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	transition: 0.3s;
+}
+
+.card-position h1 {
+	font-size: 1.2rem;
+	margin-top: 5rem;
+	margin-bottom: 0.5rem;
+}
+
+.card-position p {
+	font-size: 14px;
+	text-align: center;
+	text-color: #90a4ae;
+	padding: 0 1rem;
+	color: #3c4048;
+}
+
+.card-position .profession {
+	margin-top: 1rem;
+	font-weight: bold;
+	color: #b2b2b2;
+	font-size: 1rem;
+}
+
+.user-img {
+	background: url("https://images.unsplash.com/photo-1566753323558-f4e0952af115?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=721&q=80s");
+	border-radius: 1rem;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.card:hover .user-img {
+	width: 5rem;
+	height: 5rem;
+	border-radius: 50%;
+	top: 15%;
+	left: 37%;
+}
