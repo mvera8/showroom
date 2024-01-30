@@ -29,3 +29,7 @@ Showroom of cool stuff
 ## Bootstrap Multistep Form
 
 [Link to Item](https://mvera8.github.io/showroom/bootstrap-multistep-form/)
+
+## Radio Group Component
+
+[Link to Item](https://mvera8.github.io/showroom/radio-group-component/)
