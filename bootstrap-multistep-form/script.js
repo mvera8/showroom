@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const form = document.getElementById('wizardForm');
-    const steps = form.querySelectorAll('.step');
-    const prevBtns = form.querySelectorAll('.prev-btn');
-    const nextBtns = form.querySelectorAll('.next-btn');
+    const form        = document.getElementById('wizardForm');
+    const steps       = form.querySelectorAll('.step');
+    const prevBtns    = form.querySelectorAll('.prev-btn');
+    const nextBtns    = form.querySelectorAll('.next-btn');
     const progressBar = document.querySelector('.progress-bar');
 
     let currentStep = 0;
@@ -10,9 +10,9 @@ document.addEventListener('DOMContentLoaded', function () {
     function showStep(index) {
       steps.forEach((step, i) => {
         if (i === index) {
-          step.classList.add('active');
+          step.classList.remove('d-none');
         } else {
-          step.classList.remove('active');
+          step.classList.add('d-none');
         }
       });
 
@@ -42,5 +42,5 @@ document.addEventListener('DOMContentLoaded', function () {
     prevBtns.forEach(btn => btn.addEventListener('click', handlePrev));
     nextBtns.forEach(btn => btn.addEventListener('click', handleNext));
 
-    showStep(currentStep);
+    showStep( currentStep );
   });

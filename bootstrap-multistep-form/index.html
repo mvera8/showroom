@@ -22,40 +22,62 @@
 	<div class="container mt-5">
 		<div class="row justify-content-center">
 			<div class="col-md-8">
-				<div class="step-indicator">
-					<div>1</div>
-					<div>2</div>
-					<div>3</div>
+
+				<div class="row">
+					<div class="col text-end">1</div>
+					<div class="col text-end">2</div>
+					<div class="col text-end">3</div>
+					<div class="col text-end">4</div>
 				</div>
+
 				<div class="progress">
 					<div class="progress-bar" role="progressbar" style="width: 33%;" aria-valuenow="33" aria-valuemin="0"
 						aria-valuemax="100"></div>
 				</div>
+
 				<form id="wizardForm">
-					<!-- Step 1 -->
-					<div class="step active" id="step1">
+					<div class="step d-none" id="step1">
 						<h2>Step 1</h2>
 						<label for="step1Input">Field in Step 1:</label>
 						<input type="text" id="step1Input" class="form-control">
-						<button type="button" class="btn btn-primary mt-3 next-btn">Next</button>
+						
+						<div class="d-flex justify-content-end">
+							<button type="button" class="btn btn-primary mt-3 next-btn">Next</button>
+						</div>
 					</div>
 	
-					<!-- Step 2 -->
-					<div class="step" id="step2">
+					<div class="step d-none" id="step2">
 						<h2>Step 2</h2>
 						<label for="step2Input">Field in Step 2:</label>
 						<input type="text" id="step2Input" class="form-control">
-						<button type="button" class="btn btn-secondary mt-3 prev-btn">Previous</button>
-						<button type="button" class="btn btn-primary mt-3 next-btn">Next</button>
+						
+						<div class="d-flex justify-content-between">
+							<button type="button" class="btn btn-secondary mt-3 prev-btn">Previous</button>
+							<button type="button" class="btn btn-primary mt-3 next-btn">Next</button>
+						</div>
 					</div>
 	
-					<!-- Step 3 -->
-					<div class="step" id="step3">
+					<div class="step d-none" id="step3">
 						<h2>Step 3</h2>
 						<label for="step3Input">Field in Step 3:</label>
 						<input type="text" id="step3Input" class="form-control">
-						<button type="button" class="btn btn-secondary mt-3 prev-btn">Previous</button>
-						<button type="submit" class="btn btn-success mt-3">Submit</button>
+						
+						<div class="d-flex justify-content-between">
+							<button type="button" class="btn btn-secondary mt-3 prev-btn">Previous</button>
+							<button type="button" class="btn btn-primary mt-3 next-btn">Next</button>
+						</div>
+					</div>
+
+					<div class="step d-none" id="step4">
+						<h2>Step 4</h2>
+						<label for="step4Input">Field in Step 4:</label>
+						<input type="text" id="step43Input" class="form-control">
+						
+
+						<div class="d-flex justify-content-between">
+							<button type="button" class="btn btn-secondary mt-3 prev-btn">Previous</button>
+							<button type="submit" class="btn btn-success mt-3">Submit</button>
+						</div>
 					</div>
 				</form>
 			</div>
