@@ -41,3 +41,7 @@ Showroom of cool stuff
 ## Bootstrap Header
 
 [Link to Item](https://mvera8.github.io/showroom/bootstrap-header/)
+
+## Background Effect
+
+[Link to Item](https://mvera8.github.io/showroom/background-effect/)
