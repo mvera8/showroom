@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Bootstrap CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+	<link rel="stylesheet" href="./style.css">
+	<script type="module" src="./script.js" defer></script>
+
+	<title>Background Effect</title>
+</head>
+
+<body class="h-100">
+	
+	<main class="h-100">
+		<div class="position-relative d-flex flex-column h-100 align-items-center justify-content-center transition-bg bg-white">
+			
+			<div class="position-absolute inset-0 overflow-hidden" style="inset: 0px;">
+				<div class="jumbo position-absolute opacity-50" style="inset: -10px;"></div>
+			</div>
+
+			<h1 class="relative flex items-center transition-colors" style="z-index: 1;">
+				charm <span class="ms-1 rounded bg-dark text-white p-2">UI</span>
+			</h1>
+
+			<div class="mt-4" style="z-index: 1;">
+				<button id="toggleTheme" class="btn bg-white text-dark px-3 py-1 border rounded shadow">Toggle Theme</button>
+			</div>
+
+		</div>
+	</main>
+
+</body>
+
+</html>
