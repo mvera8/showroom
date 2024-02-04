@@ -19,140 +19,63 @@
 
 <body>
 
-	<header class="navbar navbar-expand-lg sticky-top bd-navbar bg-white border-bottom">
-		<nav class="container-fluid">
-			<a class="navbar-brand" href="#">Navbar</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="#">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Link</a>
-					</li>
-				</ul>
+	
+
+	<div class="d-flex overflow-hidden" id="wrapper">
+		<!-- Sidebar-->
+		<div class="border-end bg-white" id="sidebar-wrapper">
+			<div class="sidebar-heading border-bottom bg-light">Start Bootstrap</div>
+			<div class="list-group list-group-flush">
+				<a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Dashboard</a>
+				<a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Shortcuts</a>
+				<a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Overview</a>
+				<a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Events</a>
+				<a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Profile</a>
+				<a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Status</a>
 			</div>
-		</nav>
-
-	</header>
-
-	<div class="container-xxl mt-3 my-md-4">
-		<div class="row">
-			<!-- Sidebar -->
-			
-			<div class="col-3 position-fixed top-0 start-0 bottom-0 p-4 bg-light">
-				<h2>Sidebar</h2>
-				<p>This is a fixed sidebar.</p>
-				<div class="list-group">
-					<a href="#" class="list-group-item list-group-item-action active" aria-current="true">
-						The current link item
-					</a>
-					<a href="#" class="list-group-item list-group-item-action">A second link item</a>
-					<a href="#" class="list-group-item list-group-item-action">A third link item</a>
-					<a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
-					<a class="list-group-item list-group-item-action disabled" aria-disabled="true">A disabled link item</a>
+		</div>
+		<!-- Page content wrapper-->
+		<div id="page-content-wrapper">
+			<!-- Top navigation-->
+			<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+				<div class="container-fluid">
+					<button class="btn btn-primary" id="sidebarToggle">Toggle Menu</button>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+							class="navbar-toggler-icon"></span></button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+							<li class="nav-item active"><a class="nav-link" href="#!">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="#!">Link</a></li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown"
+									aria-haspopup="true" aria-expanded="false">Dropdown</a>
+								<div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item" href="#!">Action</a>
+									<a class="dropdown-item" href="#!">Another action</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="#!">Something else here</a>
+								</div>
+							</li>
+						</ul>
+					</div>
 				</div>
-			</div>
-			<!-- Content -->
-			<div class="col-9 ms-4">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dictum nulla et vehicula tempus. Vestibulum
-					faucibus ante sed quam posuere congue. Nunc non mi sapien. Suspendisse vitae libero magna. Nulla bibendum urna
-					libero.
-					Nam eget neque pulvinar, tempus quam et, pharetra sapien. In hendrerit lacus in odio sodales, ac molestie odio
-					maximus.
-					Vivamus tincidunt velit at magna pulvinar imperdiet. Maecenas vel commodo magna. Phasellus hendrerit diam justo, eu
-					porta mi laoreet quis. Suspendisse efficitur ipsum nisi. Cras at massa sit amet dui porta pulvinar. Integer sodales
-					fermentum erat at bibendum. Cras egestas accumsan fringilla. In vitae tincidunt ligula.</p>
-			
-				<p>Mauris at pharetra sem, quis gravida eros. Aliquam erat volutpat. Duis ut maximus lorem. Sed maximus turpis quis
-					nisi
-					luctus sodales. Mauris condimentum, sem ut convallis venenatis, nulla diam auctor justo, ut finibus augue tortor id
-					mi.
-					Aliquam sapien orci, sollicitudin vitae leo et, volutpat lacinia tortor. Nam lorem nunc, iaculis in convallis nec,
-					tempor ac odio. Nunc auctor congue eleifend. Sed venenatis in eros at semper. Suspendisse non dolor lobortis tellus
-					faucibus hendrerit. Morbi consectetur pulvinar est a dictum. Aenean pharetra nisi et purus interdum lobortis.</p>
-			
-				<p>Duis id massa turpis. Nullam condimentum tellus sollicitudin vestibulum mollis. Curabitur faucibus hendrerit est,
-					at
-					convallis quam ultrices sit amet. Curabitur iaculis ante et velit suscipit imperdiet. Pellentesque quis accumsan
-					nisl.
-					Aenean volutpat, lectus id bibendum lacinia, felis sapien euismod libero, in laoreet purus enim ut leo. Curabitur eu
-					tincidunt nisi, a imperdiet erat. Proin lacinia, nunc aliquam fermentum viverra, diam nisi cursus ipsum, tincidunt
-					feugiat nisl metus vitae dui. Aenean efficitur eget quam sit amet porta.</p>
-			
-				<p>Ut ac pretium odio. Phasellus tincidunt odio a eleifend aliquam. Phasellus euismod ex ipsum, in fringilla sapien
-					dictum
-					at. Donec sodales nisl fermentum felis facilisis, ac ullamcorper est tristique. Ut felis augue, consectetur vitae
-					risus
-					a, imperdiet elementum ipsum. Pellentesque dignissim, velit eu interdum ullamcorper, dolor lorem mollis diam, at
-					sollicitudin lectus ante nec orci. Aenean odio erat, volutpat ac dapibus eget, aliquet et nisi. Sed euismod neque eu
-					nisl suscipit faucibus. Vivamus ultrices ut velit non viverra. Nullam a tempus sapien, venenatis gravida felis. Sed
-					dictum imperdiet efficitur. Pellentesque condimentum eu augue ut ultricies.</p>
-			
-				<p>Suspendisse sed nunc ullamcorper, posuere nisi molestie, consequat erat. Duis lectus nisi, sagittis quis justo in,
-					molestie viverra est. Donec egestas condimentum faucibus. Donec mauris magna, porttitor at dui sed, commodo
-					tristique
-					eros. Nunc sollicitudin hendrerit elit condimentum varius. Quisque sodales, justo a cursus cursus, nunc velit
-					euismod
-					nibh, sit amet laoreet nisi mi in enim. Duis ut lectus nec quam ultrices imperdiet sed eget enim. Nunc finibus est
-					sed
-					varius cursus. Suspendisse potenti.</p>
-			
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dictum nulla et vehicula tempus. Vestibulum
-					faucibus ante sed quam posuere congue. Nunc non mi sapien. Suspendisse vitae libero magna. Nulla bibendum urna
-					libero.
-					Nam eget neque pulvinar, tempus quam et, pharetra sapien. In hendrerit lacus in odio sodales, ac molestie odio
-					maximus.
-					Vivamus tincidunt velit at magna pulvinar imperdiet. Maecenas vel commodo magna. Phasellus hendrerit diam justo, eu
-					porta mi laoreet quis. Suspendisse efficitur ipsum nisi. Cras at massa sit amet dui porta pulvinar. Integer sodales
-					fermentum erat at bibendum. Cras egestas accumsan fringilla. In vitae tincidunt ligula.</p>
-			
-				<p>Mauris at pharetra sem, quis gravida eros. Aliquam erat volutpat. Duis ut maximus lorem. Sed maximus turpis quis
-					nisi
-					luctus sodales. Mauris condimentum, sem ut convallis venenatis, nulla diam auctor justo, ut finibus augue tortor id
-					mi.
-					Aliquam sapien orci, sollicitudin vitae leo et, volutpat lacinia tortor. Nam lorem nunc, iaculis in convallis nec,
-					tempor ac odio. Nunc auctor congue eleifend. Sed venenatis in eros at semper. Suspendisse non dolor lobortis tellus
-					faucibus hendrerit. Morbi consectetur pulvinar est a dictum. Aenean pharetra nisi et purus interdum lobortis.</p>
-			
-				<p>Duis id massa turpis. Nullam condimentum tellus sollicitudin vestibulum mollis. Curabitur faucibus hendrerit est,
-					at
-					convallis quam ultrices sit amet. Curabitur iaculis ante et velit suscipit imperdiet. Pellentesque quis accumsan
-					nisl.
-					Aenean volutpat, lectus id bibendum lacinia, felis sapien euismod libero, in laoreet purus enim ut leo. Curabitur eu
-					tincidunt nisi, a imperdiet erat. Proin lacinia, nunc aliquam fermentum viverra, diam nisi cursus ipsum, tincidunt
-					feugiat nisl metus vitae dui. Aenean efficitur eget quam sit amet porta.</p>
-			
-				<p>>Ut ac pretium odio. Phasellus tincidunt odio a eleifend aliquam. Phasellus euismod ex ipsum, in fringilla sapien
-					dictum
-					at. Donec sodales nisl fermentum felis facilisis, ac ullamcorper est tristique. Ut felis augue, consectetur vitae
-					risus
-					a, imperdiet elementum ipsum. Pellentesque dignissim, velit eu interdum ullamcorper, dolor lorem mollis diam, at
-					sollicitudin lectus ante nec orci. Aenean odio erat, volutpat ac dapibus eget, aliquet et nisi. Sed euismod neque eu
-					nisl suscipit faucibus. Vivamus ultrices ut velit non viverra. Nullam a tempus sapien, venenatis gravida felis. Sed
-					dictum imperdiet efficitur. Pellentesque condimentum eu augue ut ultricies.</p>
-			
-				<p>Suspendisse sed nunc ullamcorper, posuere nisi molestie, consequat erat. Duis lectus nisi, sagittis quis justo
-					in,
-					molestie viverra est. Donec egestas condimentum faucibus. Donec mauris magna, porttitor at dui sed, commodo
-					tristique
-					eros. Nunc sollicitudin hendrerit elit condimentum varius. Quisque sodales, justo a cursus cursus, nunc velit
-					euismod
-					nibh, sit amet laoreet nisi mi in enim. Duis ut lectus nec quam ultrices imperdiet sed eget enim. Nunc finibus est
-					sed
-					varius cursus. Suspendisse potenti.</p>
+			</nav>
+			<!-- Page content-->
+			<div class="container-fluid">
+				<h1 class="mt-4">Simple Sidebar</h1>
+				<p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on
+					larger screens. When toggled using the button below, the menu will change.</p>
+				<p>
+					Make sure to keep all page content within the
+					<code>#page-content-wrapper</code>
+					. The top navbar is optional, and just for demonstration. Just create an element with the
+					<code>#sidebarToggle</code>
+					ID which will toggle the menu when clicked.
+				</p>
 			</div>
 		</div>
 	</div>
-
-	
-	
-	
-	
 	
 
 	
