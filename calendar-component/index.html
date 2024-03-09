@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>jsCalendar</title>
+	<meta name="description" content="jsCalendar example">
+	<meta name="author" content="GramThanos">
+
+	<!-- https://gramthanos.github.io/jsCalendar/demos.html#load-demo    jsCalendar -->
+	<link rel="stylesheet" href="source/jsCalendar.min.css">
+	<script type="text/javascript" src="source/jsCalendar.min.js"></script>
+
+	<script type="text/javascript" src="source/jsCalendar.lang.es.js"></script>
+</head>
+
+<body>
+
+	
+<button id="reset-button">Reset</button>
+<button id="previous-button">Previous</button>
+<button id="next-button">Next</button>
+
+
+<!-- My calendar element -->
+<div id="my-calendar"></div>
+<div id="my-events"></div>
+
+
+<!-- Create the calendar -->
+<script type="text/javascript">
+	const reset_button = document.getElementById("reset-button");
+		const previous_button = document.getElementById("previous-button");
+		const next_button = document.getElementById("next-button");
+		const myEventsElement = document.getElementById("my-events");
+		const myCalendar = jsCalendar.new("#my-calendar", "now", {
+			"language": "es",
+			"navigator": "false",
+			"monthFormat": "month YYYY"
+		});
+
+		const events = [
+			{ date: "2024-03-08", title: "Evento 1", description: "Descripción del evento 1" },
+			{ date: "2024-03-08", title: "Evento 2", description: "Descripción del evento 2" },
+			{ date: "2024-03-09", title: "Evento 1", description: "Descripción del evento 1" },
+			{ date: "2024-03-15", title: "Evento 2", description: "Descripción del evento 2" }
+		];
+
+		reset_button.addEventListener("click", function () {
+				myCalendar.reset();
+			}, false);
+
+			previous_button.addEventListener("click", function () {
+				myCalendar.previous();
+			}, false);
+
+			next_button.addEventListener("click", function () {
+				myCalendar.next();
+			}, false);
+
+		function updateEventsForDate(date) {
+			const selectedEvents = events.filter(function (event) {
+				return event.date === date.toISOString().split('T')[0];
+			});
+
+			if (selectedEvents.length > 0) {
+				let eventDetails = "<h3>Eventos para " + date + ":</h3>";
+				selectedEvents.forEach(function (event) {
+					eventDetails += "<p>- " + event.title + ": " + event.description + "</p>";
+				});
+				myEventsElement.innerHTML = eventDetails;
+			} else {
+				myEventsElement.innerHTML = "<p>No hay eventos para " + date + "</p>";
+			}
+		}
+
+		myCalendar.select('08/03/2024');
+		myCalendar.select('09/03/2024');
+
+		// Call the function on content load
+		updateEventsForDate(new Date());
+
+		myCalendar.onDateClick(function (event, date) {
+			updateEventsForDate(date);
+		});
+</script>
+
+</body>
+
+</html>
