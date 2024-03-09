@@ -45,3 +45,6 @@ Showroom of cool stuff
 ## Background Effect
 
 [Link to Item](https://mvera8.github.io/showroom/background-effect/)
+
+## TITLE
+[Link to Item](https://mvera8.github.io/showroom/calendar-component/)
